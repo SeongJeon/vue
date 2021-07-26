@@ -3,13 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve:local": "vue-cli-service serve --mode development",
+    "serve:qa": "vue-cli-service serve --mode qa --port 8082",
+    "serve:live": "vue-cli-service serve --mode production",
+    "build:qa": "vue-cli-service build --mode qa",
+    "build:live": "vue-cli-service build --mode production"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "animate.css": "^4.1.1",
+    "autoprefixer": "^10.3.1",
+    "axios": "^0.21.1",
+    "core-js": "^3.15.2",
+    "is-mobile": "^3.0.0",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.36.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.2",
+    "vue-style-loader": "^4.1.3",
+    "vuetify": "^2.5.7",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -17,7 +29,12 @@
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^6.0.1",
+    "prettier": "^1.19.1",
+    "sass-loader": "^10.2.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -27,16 +44,53 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "plugin:prettier/recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "linebreak-style": 0,
+      "quotes": [
+        2,
+        "single"
+      ],
+      "semi": [
+        2,
+        "always"
+      ],
+      "one-var": [
+        2,
+        "never"
+      ],
+      "space-in-parens": [
+        2,
+        "never"
+      ],
+      "no-console": 1,
+      "space-before-function-paren": [
+        "error",
+        {
+          "anonymous": "never",
+          "named": "never",
+          "asyncArrow": "always"
+        }
+      ]
+    }
+  },
+  "postcss": {
+    "plugins": {}
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions",
-    "not dead"
+    "last 2 versions"
   ]
 }
