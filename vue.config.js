@@ -3,13 +3,12 @@
 const path = require('path');
 const assetsDir = 'file_static';
 
-
 module.exports = {
   assetsDir,
   lintOnSave: process.env.NODE_ENV === "development",
   productionSourceMap: false,
   runtimeCompiler: true,
-  // transpileDependencies: ['vue-daum-postcode', 'swiper', 'dom7'],
+  transpileDependencies: ['vue-daum-postcode', 'swiper', 'dom7'],
   devServer: {
     open: true,
   },

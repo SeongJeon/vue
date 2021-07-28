@@ -18,6 +18,9 @@ const mutations = {
   setGnbExpanded(state, payload) {
     state.gnbExpanded = payload;
   },
+  setPageTitle(state, title) {
+    state.pageTitle = title;
+  },
 };
 
 export default mutations;

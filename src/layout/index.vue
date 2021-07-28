@@ -2,21 +2,21 @@
   <div id="wrap">
     <vue-header></vue-header>
 
-    <vue-main></vue-main>
+    <vue-gnb></vue-gnb>
 
-    <vue-footer></vue-footer>
+    <vue-main></vue-main>
   </div>
 </template>
 
 <script>
-import {Header, Footer, Main} from '@/layout/components';
+import {Header, Main, Gnb} from '@/layout/components';
 
 export default {
   name: 'Layout',
   components: {
-    VueHeader : Header,
-    VueFooter : Footer,
-    VueMain : Main,
+    VueHeader: Header,
+    VueMain: Main,
+    VueGnb: Gnb,
   },
   methods: {
     goBack() {

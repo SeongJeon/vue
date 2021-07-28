@@ -1,13 +1,12 @@
 <template>
-  <footer id="footer">
+  <v-footer id="footer" app>
     footer
-  </footer>
+  </v-footer>
 </template>
 
 <script>
 export default {
   name: 'Footer',
-  methods: {
-  },
+  methods: {},
 };
 </script>

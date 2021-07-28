@@ -1,15 +1,13 @@
 <template>
-  <div class="content">
-    content
-  </div>
+  <v-row>
+    컴포넌트 정리 페이지 입니다.
+  </v-row>
 </template>
 
 <script>
 export default {
-  name: "Index",
+  name: 'Index',
   components: {},
-  methods: {}
-
-
+  methods: {},
 };
 </script>
