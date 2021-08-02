@@ -49,6 +49,7 @@ export default {
     ...mapActions(['setGnbExpanded']),
 
     gnbExpanded() {
+      console.log('test');
       this.setGnbExpanded(!this.$store.state.gnbExpanded);
     },
   },
