@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve:local": "vue-cli-service serve --mode development",
-    "serve:qa": "vue-cli-service serve --mode qa --port 8082",
-    "serve:live": "vue-cli-service serve --mode production",
+    "serve:local": "vue-cli-service serve --mode development  --port 8085",
     "build:qa": "vue-cli-service build --mode qa",
     "build:live": "vue-cli-service build --mode production"
   },
   "dependencies": {
+    "@vue/cli": "^3.12.1",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.3.1",
     "axios": "^0.21.1",
