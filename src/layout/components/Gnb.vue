@@ -37,6 +37,7 @@ export default {
       console.log('dd');
       // this.$router.push(link);
       console.log(this.$route.params);
+      console.log('test');
     },
   },
 };
